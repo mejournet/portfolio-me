@@ -210,7 +210,7 @@ div.linkedin, div.twitter{
 	padding-top: 10px;
 }
 
-.copy-mail{
+#hover-mail{
 	position: absolute;
 	bottom: 40px;
 	right: 100px;
@@ -218,7 +218,15 @@ div.linkedin, div.twitter{
 	display: none;
 }
 
-button.mail {
+#copied-mail{
+	position: absolute;
+	bottom: 50px;
+	right: 150px;
+	float: right;
+	display: none;
+}
+
+span.mail {
 	color:var(--blue);
 	font-size:26px;
 	font-weight: 900;
@@ -226,15 +234,24 @@ button.mail {
 	border: none;
 }
 
-button.mail:before {
+span.mail:before {
   content: "\F0e0";
   font-family: FontAwesome;
   padding-right: 10px;
 }
 
-button.mail:hover+.copy-mail {
+
+span.mail:hover+#hover-mail {
 	display: block;
 }
+
+/*span.mail:active~#hover-mail, span.mail:visited~#hover-mail {
+	display: none;
+}
+
+span.mail:active~#copied-mail, span.mail:visited~#copied-mail {
+	display: block;
+}*/
 
 a.linkedin, a.twitter {
 	color:var(--blue);
@@ -258,17 +275,21 @@ a.linkedin, a.twitter {
 		text-align: center;
 	}
 
-	a.mail {
+	span.mail {
 		color:var(--blue);
 		font-size:22px;
 		font-weight: 900;
 		margin-top: 20px;
 	}
 
-	a.mail:before {
+	span.mail:before {
 	  content: "\F0e0";
 	  font-family: FontAwesome;
 	  padding-right: 10px;
+	}
+
+	span.mail:hover+#hover-mail, span.mail:active~#hover-mail, span.mail:active~#copied-mail {
+		display: none;
 	}
 
 	a.linkedin, a.twitter {
