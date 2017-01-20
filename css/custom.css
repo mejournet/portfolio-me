@@ -12,15 +12,15 @@
 }
 
 
-.zewaow {
+.zewaow, .zewaow:hover, .zewaow:active, .zewaow:visited {
 	color:var(--violet);
 }
 
-.viadeo {
+.viadeo, .viadeo:hover, .viadeo:active, .viadeo:visited {
 	color:var(--orange);
 }
 
-.mentor {
+.mentor, .mentor:hover, .mentor:active, .mentor:visited {
 	color:var(--pink);
 }
 
@@ -60,13 +60,13 @@ a:hover {
 
 /**** Work arrow ****/
 
-.work-arrow-title {
+a.work-arrow-title, a.work-arrow-title:hover, a.work-arrow-title:active {
 	color: var(--blue);
 	font-weight:900;
 	font-size:21px;
 	margin-bottom: 0px;
+	text-decoration: none;
 }
-
 
 .fa-arrow-down {
 	margin:0;
@@ -226,7 +226,7 @@ div.linkedin, div.twitter{
 	display: none;
 }
 
-span.mail {
+span#copy-mail {
 	color:var(--blue);
 	font-size:26px;
 	font-weight: 900;
@@ -234,14 +234,14 @@ span.mail {
 	border: none;
 }
 
-span.mail:before {
+span#copy-mail:before {
   content: "\F0e0";
   font-family: FontAwesome;
   padding-right: 10px;
 }
 
 
-span.mail:hover+#hover-mail {
+span#copy-mail:hover+#hover-mail {
 	display: block;
 }
 
@@ -275,26 +275,39 @@ a.linkedin, a.twitter {
 		text-align: center;
 	}
 
-	span.mail {
+	#copied-mail{
+		position: absolute;
+		bottom: 23px;
+		right: 0px;
+		float: right;
+		display: none;
+	}
+
+	img#copied-mail {
+		max-height:28px;
+		max-width: auto; 
+	}
+
+	span#copy-mail {
 		color:var(--blue);
-		font-size:22px;
+		font-size:20px;
 		font-weight: 900;
 		margin-top: 20px;
 	}
 
-	span.mail:before {
+	span#copy-mail:before {
 	  content: "\F0e0";
 	  font-family: FontAwesome;
 	  padding-right: 10px;
 	}
 
-	span.mail:hover+#hover-mail, span.mail:active~#hover-mail, span.mail:active~#copied-mail {
+	span#copy-mail:hover+#hover-mail, span#copy-mail:active~#hover-mail, span#copy-mail:active~#copied-mail {
 		display: none;
 	}
 
 	a.linkedin, a.twitter {
 		color:var(--blue);
-		font-size:22px;
+		font-size:20px;
 	}
 }
 
@@ -396,6 +409,10 @@ a.home-icon-more::before{
   padding-right: 10px;	
 }
 
+
+
+/**** Project preview ****/
+
 .project-preview {
     background: #e5e6ec;
     padding: 50px 40px 50px 40px;
@@ -435,10 +452,16 @@ p.title-project-preview > a {
 	line-height: 1.2em;
 }
 
+.p-project-preview > span {
+	font-size:14px;
+	color: var(--blue);
+	font-style: italic;
+}
+
 ul.link-project-preview {
 	list-style: none;
 	padding-left: 0;
-	margin-top: 35px;
+	margin-top: 25px;
 	margin-bottom: 25px;
 }
 
