@@ -345,13 +345,13 @@ a.linkedin, a.twitter {
 } 
 
 
-.quote-ux {
+#quote-ux {
 	font-style: italic;
 	font-size: 18px;
 	color:#787B98;
 }
 
-.author-ux {
+#author-ux {
 	font-size: 16px;
 	color:#787B98;
 	font-weight:300;
@@ -1017,5 +1017,5 @@ p.p-project-slider-intro {
 .caveat {
 	font-family: caveat, sans-serif;
 	font-style: italic;
-	font-size: 24px;
+	font-size: 26px;
 }

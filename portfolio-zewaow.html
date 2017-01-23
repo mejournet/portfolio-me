@@ -259,7 +259,7 @@
 
                 <section>
                     <div class="row content-project">
-                        <div class="col-md-8">
+                        <div class="col-md-8 col-md-offset-2">
                             <p class="title-content-project">ZeWaow : pour qui ? pour quoi ?</p>
                             <p class="text-content-project">Bringing unlocked me an striking ye perceive. Mr by wound hours oh happy. Me in resolution pianoforte continuing we. Most my no spot felt by no. He he in forfeited furniture sweetness he arranging. Me tedious so to behaved
                                 written account ferrars moments. Too objection for elsewhere her preferred allowance her. Marianne shutters mr steepest to me. Up mr ignorant produced distance although is sociable blessing. Ham whom call all lain like.</p>
@@ -401,8 +401,8 @@ _________________________________________________________ -->
         <div id="get-it">
             <div class="container">
                 <div class="col-sm-12">
-                    <p class="quote-ux">"Good design is obvious. Great design is transparent.</p>
-                    <p class="author-ux">- Joe Sparano</p>
+                    <p id="quote-ux">"Good design is obvious. Great design is transparent.</p>
+                    <p id="author-ux">- Joe Sparano</p>
                 </div>
             </div>
         </div>
@@ -467,7 +467,33 @@ _________________________________________________________ -->
         };
     </script>
 
-    <script>
+    <script language="JavaScript">
+
+        var quote = new Array ();   
+        quote[0] = "\"Good design is obvious. Great design is transparent.\"";
+        quote[1] = "\"People ignore design that ignores people.\"";
+        quote[2] = "\"Want your users to fall in love with your designs ? Fall in love with your users.\"";
+        quote[3] = "\"There is a difference between building the product right and building the right product.\"";
+        quote[4] = "\"Don’t make me think.\"";
+        quote[5] = "\"There are 3 responses to a piece of design– yes, no, and WOW! Wow is the one to aim for.\"";
+        quote[6] = "\"If you want to go fast, go alone; if you want to go far, bring others.\"";
+
+        var author = new Array ();  
+        author[0] = "- Joe Sparano";
+        author[1] = "- Frank Chimero";
+        author[2] = "- Dana Chisnell";
+        author[3] = "- John Doe";
+        author[4] = "- Steve Krug";
+        author[5] = "- Milton Glaser";
+        author[6] = "- Proverb";
+
+        var i = Math.floor(7*Math.random());   // 7 est le nombre total de authors/quote
+
+        console.log(i);
+
+        document.getElementById("quote-ux").innerHTML = quote[i];
+        document.getElementById("author-ux").innerHTML = author[i];
+
         /*$('#work-anchor').click(function(){
             $('html, body').animate({
                 scrollTop: $('#work-anchor').position().top},
