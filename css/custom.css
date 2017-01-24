@@ -838,9 +838,10 @@ p.p-project-slider-intro {
 	padding-right: 80px;
 }
 
-.project-resume > P {
-	font-size: 18px;
+.project-resume > p {
+	font-size: 17px;
 	color: var(--blue);
+	line-height: 27px;
 }
 
 .title-project-portfolio {
@@ -921,6 +922,7 @@ p.p-project-slider-intro {
 }
 
 
+
 /**** Content project ****/
 
 .title-content-project {
@@ -931,9 +933,11 @@ p.p-project-slider-intro {
 }
 
 .text-content-project {
-	font-size: 18px;
+	font-size: 17px;
 	color:var(--blue);
+	line-height: 27px;
 }
+
 
 
 /**** The End ****/
