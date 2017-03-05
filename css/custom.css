@@ -953,6 +953,19 @@ ul.link-project-preview > li {
 	margin-top: 30px;
 }
 
+.text-content-project > a {
+	font-size: 17px;
+}
+
+.list-content-project {
+	font-size: 17px;
+	color:var(--blue);
+}
+
+.list-content-project > li {
+	margin-bottom: 15px;
+}
+
 
 
 /**** The End ****/
