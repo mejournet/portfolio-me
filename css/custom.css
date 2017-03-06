@@ -428,6 +428,7 @@ h1.text-intro{
 .lead {
   font-size: 21px;
   color:var(--blue);
+  font-weight: 400;
 }
 
 a.home-icon-cv::before{
