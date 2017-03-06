@@ -687,6 +687,15 @@ a.btn-project-preview::after/*, span.project-button::after*/ {
     background: var(--violet);
 }
 
+.jumbotron .dark-mask.viadeo{
+    background: var(--orange);
+    opacity: 1;
+}
+
+.jumbotron .dark-mask.more{
+    background: var(--green);
+}
+
 .jumbotron h2 {
 	text-transform: none;
 	letter-spacing: 0em;
