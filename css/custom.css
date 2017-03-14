@@ -4,10 +4,11 @@
 
 :root{
 	--blue:#0B1376;
-	--violet:#7938EA;
+	--violet:#8E44EA;
 	--orange:#f78d2d;
 	--green:#1CDC95;
 	--pink:#D8005A;
+	--moreblue:#63ACFF;
 	--lightblue:#509fff;
 }
 
@@ -25,7 +26,7 @@
 }
 
 .more, .more:hover, .more:active, .more:visited {
-	color:var(--green);
+	color:var(--moreblue);
 }
 
 /**** Miscellaneous ****/
@@ -612,12 +613,12 @@ a.btn-project-preview.mentor:focus {
 /*more button*/
 
 a.btn-project-preview.more {
-	border: solid 2px var(--green);
+	border: solid 2px var(--moreblue);
 }
 
 a.btn-project-preview.more:hover, 
 a.btn-project-preview.more:focus {
-	background-color: var(--green)
+	background-color: var(--moreblue)
 }
 
 
@@ -694,7 +695,7 @@ a.btn-project-preview::after/*, span.project-button::after*/ {
 }
 
 .jumbotron .dark-mask.more{
-    background: var(--green);
+    background: var(--moreblue);
 }
 
 .jumbotron h2 {
@@ -991,8 +992,22 @@ ul.link-project-preview > li {
 /**** OTHER PROJECTS ****/
 
 #other-projects {
-  background: var(--blue);
   padding: 30px 0 30px;
+} 
+
+#other-projects.zewaow {
+  background: var(--violet);
+  opacity: 0.9;
+} 
+
+#other-projects.viadeo {
+  background: var(--orange);
+  opacity: 0.9;
+} 
+
+#other-projects.more {
+  background: var(--moreblue);
+  opacity: 0.9;
 } 
 
 #other-projects a.work-arrow-title {
